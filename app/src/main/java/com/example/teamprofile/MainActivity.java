@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View v) {sendMessage1(v); }
         });
     }
+
     //Tianyi Zhou's Part
     public void sendMessage(View view)
     {
