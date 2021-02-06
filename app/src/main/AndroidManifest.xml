@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Teamprofile">
+        <activity android:name=".BruceWengProfile"></activity>
         <activity android:name=".SsuTingHungProfile" />
         <activity android:name=".TianyiZhouProfile" />
         <activity android:name=".MainActivity">
