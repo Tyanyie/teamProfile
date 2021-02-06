@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity
 {
-    Button buttonTianyiZhou, buttonSsuTingHung;
+    Button buttonTianyiZhou, buttonSsuTingHung, btn_Bruce;
 
 
     /*
@@ -42,6 +42,17 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View v) {sendMessage1(v); }
         });
+
+        //Bruce's part
+        btn_Bruce = findViewById(R.id.btn_toBWPage);
+        btn_Bruce.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                sendMessageBW(v);
+            }
+        });
     }
 
     //Tianyi Zhou's Part
@@ -57,4 +68,10 @@ public class MainActivity extends AppCompatActivity
         startActivity(intent);
     }
 
+    //Bruce's part
+    public void sendMessageBW(View view)
+    {
+        Intent intent = new Intent(this, BruceWengProfile.class);
+        startActivity(intent);
+    }
 }
