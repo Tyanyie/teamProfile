@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity
 {
-    Button buttonTianyiZhou, buttonSsuTingHung, btn_Bruce;
+    Button buttonTianyiZhou, buttonSsuTingHung, btn_Bruce, button_robert;
 
 
     /*
@@ -53,6 +53,17 @@ public class MainActivity extends AppCompatActivity
                 sendMessageBW(v);
             }
         });
+
+        //Robert Heller's part
+        button_robert = findViewById(R.id.robertspage);
+        button_robert.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                sendMessageRob(v);
+            }
+        });
     }
     //Tianyi Zhou's Part
     public void sendMessage(View view)
@@ -71,6 +82,13 @@ public class MainActivity extends AppCompatActivity
     public void sendMessageBW(View view)
     {
         Intent intent = new Intent(this, BruceWengProfile.class);
+        startActivity(intent);
+    }
+
+    //Robert Heller's part
+    public void sendMessageRob(View view)
+    {
+        Intent intent = new Intent(this, RobertHellerProfile.class);
         startActivity(intent);
     }
 }
