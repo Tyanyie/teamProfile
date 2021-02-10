@@ -8,7 +8,7 @@
     <string name="lab_3_team_profile_assignment_for_comp2160">Lab 3 team profile assignment for COMP2160</string>
     <string name="to_ssu_ting_hung_s_page">To Ssu-Ting Hung\'s Page</string>
     <string name="hung_introduction">Ssu-Ting Hung</string>
-    <string name="hung_description">TRU CS student, I have two cats."\n""\n"Cats are always right!</string>
+    <string name="hung_description">I have two cats."\n\n"Both of them are Maine Coon mix, so they are a little huge."\n""\n"Cats are always right!</string>
     <string name="hung_cat_image">hung_cat_image</string>
     <string name="to_bruce_weng_s_page">TO BRUCE WENG\'S PAGE</string>
     <string name="bruce_s_image">Bruce\'s image</string>
@@ -19,4 +19,8 @@
     <string name="robertpic">Robertpic</string>
     <string name="hello_i_am_a_computer_science_student_at_tru">Hello, I am a computer science student at TRU.</string>
     <string name="i_like_birds">I like birds.</string>
+    <string name="description_title_hung">Description</string>
+    <string name="degree_title_hung">Degree</string>
+    <string name="bachelor_hung">(Bachelor)</string>
+    <string name="cs_hung">Computer Scienece</string>
 </resources>

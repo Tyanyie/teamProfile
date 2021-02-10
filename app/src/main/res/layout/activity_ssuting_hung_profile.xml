@@ -6,66 +6,135 @@
     android:layout_height="match_parent"
     tools:context=".SsuTingHungProfile">
 
-    <ImageView
-        android:id="@+id/catImageView"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:contentDescription="@string/hung_cat_image"
-        android:src="@drawable/_8723"
+    <TextView
+        android:id="@+id/background2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#CAC3BB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/catImageView"
+        android:layout_width="362dp"
+        android:layout_height="206dp"
+        android:contentDescription="@string/hung_cat_image"
+        android:foregroundGravity="center_vertical|center|center_horizontal"
+        android:src="@drawable/cat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.673"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499"
-        />
+        app:layout_constraintVertical_bias="0.167" />
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.5" />
+    <TextView
+        android:id="@+id/degree_title1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center_horizontal"
+        android:text="@string/degree_title_hung"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="@+id/background2"
+        app:layout_constraintTop_toBottomOf="@+id/myname" />
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.55" />
+    <TextView
+        android:id="@+id/description_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center_horizontal"
+        android:text="@string/description_title_hung"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/background2"
+        app:layout_constraintTop_toBottomOf="@+id/degree_title1" />
 
-        <TextView
-            android:id="@+id/myname"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:includeFontPadding="false"
-            android:text="@string/hung_introduction"
-            android:textSize="24sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline4"
-            app:layout_constraintTop_toTopOf="@+id/catImageView"
-            tools:targetApi="p" />
+    <TextView
+        android:id="@+id/degree_hung"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="@string/cs_hung"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/degree_title1"
+        app:layout_constraintTop_toBottomOf="@+id/myname" />
+
+    <TextView
+        android:id="@+id/bachelor_hung"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/bachelor_hung"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/degree_hung" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/myname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="@string/hung_introduction"
+        android:textColor="#6B5152"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:layout_constraintVertical_bias="0.157"
+        tools:targetApi="p" />
 
     <TextView
         android:id="@+id/hungDescription"
-        android:layout_width="145dp"
-        android:layout_height="237dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="@string/hung_description"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toBottomOf="@+id/myname"
-        app:layout_constraintVertical_bias="0.141" />
+        app:layout_constraintTop_toBottomOf="@+id/bachelor_hung"
+        app:layout_constraintVertical_bias="0.134" />
 
-        <androidx.constraintlayout.widget.Guideline
+    <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.41" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

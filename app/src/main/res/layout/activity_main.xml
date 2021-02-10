@@ -4,31 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C6CBD7"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/background"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/group_profiles"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        android:layout_height="0dp"
+        android:background="#8696A7"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.533" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:fontFamily="cursive"
         android:gravity="center"
-        android:text="@string/lab_3_team_profile_assignment_for_comp2160"
-        android:textColor="#AAAAAA"
-        android:textSize="18sp"
+        android:text="@string/group_profiles"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FFFFFF"
+        android:textSize="46sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -36,7 +35,26 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.735" />
+        app:layout_constraintVertical_bias="0.605" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/caveat_brush"
+        android:gravity="center"
+        android:text="@string/lab_3_team_profile_assignment_for_comp2160"
+        android:textColor="#FAEAD3"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.761" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -56,8 +74,10 @@
         android:id="@+id/TianyiZhouPage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
         android:text="@string/to_tianyi_zhou_s_page"
         android:textSize="18sp"
+        app:backgroundTint="#69647B"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline" />
@@ -69,6 +89,7 @@
         android:layout_marginTop="48dp"
         android:text="@string/to_bruce_weng_s_page"
         android:textSize="18sp"
+        app:backgroundTint="#69647B"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline" />
@@ -81,6 +102,7 @@
         android:onClick="sendMessageRob"
         android:text="@string/to_robert_heller_s_page"
         android:textSize="18sp"
+        app:backgroundTint="#69647B"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline" />
@@ -92,6 +114,7 @@
         android:layout_marginTop="144dp"
         android:text="@string/to_ssu_ting_hung_s_page"
         android:textSize="18sp"
+        app:backgroundTint="#69647B"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline" />
