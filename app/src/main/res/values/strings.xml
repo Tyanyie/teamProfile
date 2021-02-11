@@ -24,4 +24,7 @@
     <string name="bachelor_hung">(Bachelor)</string>
     <string name="cs_hung">Computer Scienece</string>
     <string name="description_01">Description</string>
+    <string name="description_rob">Description</string>
+    <string name="computer_science_student_at_tru_i_like_birds">Computer science student at TRU. I like birds.</string>
+    <string name="robspic">RobsPic</string>
 </resources>
